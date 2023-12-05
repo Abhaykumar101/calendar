@@ -44,7 +44,7 @@ export default function Calendar() {
 	const [selectDate, setSelectDate] = useState(currentDate);
 	return (
 		<div className={`flex gap-4 mx-auto h-full `}>
-			<div className={`flex ${isMainDivHidden ? 'hidden' : ''}`}>
+			<div className={`flex justify-center items-center ${isMainDivHidden ? 'hidden' : ''}`}>
 			<div className={`flex flex-col h-full ${isDivhidden ? 'hidden' : ''} `}>
 			<h1 className="text-lg font-semibold px-4 py-8">Select a Date & Time</h1>
 				<div className="flex justify-between items-center">
@@ -124,7 +124,7 @@ export default function Calendar() {
 				<h1 className="font-semibold text-center text-[#EC0B43]">
 					{selectDate.toDate().toDateString()}
 				</h1>
-				<div className="overflow-y-scroll  gap-4 flex flex-col py-2 md:px-8 transition-all duration-700">
+				<div className="overflow-y-scroll  gap-4 flex flex-col justify-center items-center py-2 md:px-8 transition-all duration-700">
 				{timeSlots.map((time, index) => (
 					 <p key={index} className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
 					 ))}
