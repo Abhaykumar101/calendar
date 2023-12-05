@@ -47,7 +47,7 @@ export default function Calendar() {
 			<div className={`flex ${isMainDivHidden ? 'hidden' : ''}`}>
 			<div className={`flex flex-col h-full ${isDivhidden ? 'hidden' : ''} `}>
 			<h1 className="text-lg font-semibold px-4 py-8">Select a Date & Time</h1>
-				<div className="flex ">
+				<div className="flex justify-between items-center">
 		
 					<div className="flex gap-2 w-full justify-center items-center ">
 						<GrFormPrevious
@@ -56,7 +56,7 @@ export default function Calendar() {
 								setToday(today.month(today.month() - 1));
 							}}
 						/>
-						<h1 className="select-none font-semibold">
+						<h1 className="select-none font-semibold py-4">
 						{months[today.month()]}, {today.year()}
 					</h1>
 
@@ -68,15 +68,15 @@ export default function Calendar() {
 						/>
 					</div>
 				</div>
-				<div className="grid grid-cols-7 ">
+				<div className="grid grid-cols-7">
 					{days.map((day, index) => {
 						return (
-							<h1
+							<h2
 								key={index}
-								className="text-sm text-center h-14 w-14 grid place-content-center text-gray-500 select-none"
+								className="text-sm py-4 grid place-content-center text-gray-500 select-none"
 							>
 								{day}
-							</h1>
+							</h2>
 						);
 					})}
 				</div>
@@ -89,7 +89,7 @@ export default function Calendar() {
 									key={index}
 									className="p-2 text-center h-12 grid place-content-center text-sm "
 								>
-									<h1
+									<h2
 										className={cn(
 											currentMonth ? "" : "text-gray-400",
 											today
@@ -111,7 +111,7 @@ export default function Calendar() {
 
 									>
 										{date.date()}
-									</h1>
+									</h2>
 								</div>
 							);
 						}
