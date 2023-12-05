@@ -1,7 +1,6 @@
 "use client";
 import Image from 'next/image'
 import React, {useState} from "react";
-import {render} from "react-dom";
 import App from './App';
 
 export default function Home() {

@@ -126,7 +126,7 @@ export default function Calendar() {
 				</h1>
 				<div className="overflow-y-scroll  gap-4 flex flex-col py-2 px-8 transition-all duration-700">
 				{timeSlots.map((time, index) => (
-					 <p className={`border border-purple-300 hover:border-purple-500 text-center px-16 rounded-lg py-2 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
+					 <p key={index} className={`border border-purple-300 hover:border-purple-500 text-center px-16 rounded-lg py-2 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
 					 ))}
                 </div>  
 			</div>
