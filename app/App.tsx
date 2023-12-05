@@ -73,7 +73,7 @@ export default function Calendar() {
 						return (
 							<h2
 								key={index}
-								className="text-sm py-4 grid place-content-center text-gray-500 select-none"
+								className="text-sm font-medium py-4 grid place-content-center text-gray-500 select-none"
 							>
 								{day}
 							</h2>
@@ -119,12 +119,13 @@ export default function Calendar() {
 				</div>
 			</div> 
 			
-			<div className={`flex flex-col justify-center w-full items-center gap-4 py-20 transition-all duration-700 ${isDivhidden ? '' : 'hidden'} `}>
-			<h2 className="text-lg font-semibold pb-4">Select a Date & Time</h2>
+			<div className={`flex flex-col justify-center w-full relative items-center gap-4 py-20 transition-all duration-700 ${isDivhidden ? '' : 'hidden'} `}>
+			<div className="sticky top-0 py-8 md:py-0 bg-white w-full">
+			<h2 className="text-lg font-semibold text-center pb-4 ">Select a Date & Time</h2>
 				<h2 className="font-semibold text-center text-[#EC0B43]">
 					{selectDate.toDate().toDateString()}
-				</h2>
-				<div className="overflow-y-scroll  gap-4 flex flex-col justify-center items-center py-2 md:px-8 transition-all duration-700">
+				</h2></div>
+				<div className="overflow-y-scroll gap-4 flex flex-col justify-center items-center py-2 md:px-8 transition-all duration-700">
 				{timeSlots.map((time, index) => (
 					 <p key={index} className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
 					 ))}

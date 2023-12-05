@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <div className="flex md:h-screen justify-center items-center transition-all duration-700">
-      <div className="flex md:flex-row flex-col gab-2 md:h-[650px] bg-white rounded-lg shadow-sm "  >
+      <div className="flex md:flex-row flex-col gab-2 md:h-[650px] bg-white md:rounded-lg shadow-sm "  >
         <div className="md:border-r-[1px] shadow-2xl md:shadow-[0px] ">
           <div className="border-b-[1px] flex justify-center items-center py-10">
             <img src="/image/ooulet.png" alt="" className="w-1/2" />
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         
 
-        <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 shadow-2xl md:shadow-[0px] rounded-lg ">
+        <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 shadow-2xl md:shadow-[0px] ">
         <App />
       </div>
 
