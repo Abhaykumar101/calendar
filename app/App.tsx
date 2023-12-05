@@ -44,7 +44,7 @@ export default function Calendar() {
 	const [selectDate, setSelectDate] = useState(currentDate);
 	return (
 		<div className={`flex gap-4 mx-auto h-full `}>
-			<div className={`flex justify-center items-center ${isMainDivHidden ? 'hidden' : ''}`}>
+			<div className={`flex ${isMainDivHidden ? 'hidden' : ''}`}>
 			<div className={`flex flex-col h-full ${isDivhidden ? 'hidden' : ''} `}>
 			<h1 className="text-lg font-semibold px-4 py-8">Select a Date & Time</h1>
 				<div className="flex justify-between items-center">
@@ -119,7 +119,7 @@ export default function Calendar() {
 				</div>
 			</div> 
 			
-			<div className={`flex flex-col justify-center w-full items-center gap-4 px-4 py-20 transition-all  ${isDivhidden ? '' : 'hidden'} `}>
+			<div className={`flex flex-col justify-center w-full items-center gap-4 border py-20 transition-all duration-700 ${isDivhidden ? '' : 'hidden'} `}>
 			<h1 className="text-lg font-semibold pb-4">Select a Date & Time</h1>
 				<h1 className="font-semibold text-center text-[#EC0B43]">
 					{selectDate.toDate().toDateString()}
