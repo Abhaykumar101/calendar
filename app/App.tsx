@@ -139,7 +139,7 @@ export default function Calendar() {
             <h2 className="font-semibold text-lg">Enter Detail</h2>
 			<a href="" className="border rounded-full"><img src="/image/left.png" alt="" className="md:w-10 md:h-10 w-8 h-8"/></a>
 			</div>
-            <div className="flex flex-col gap-8 md:w-5/6 w-full">
+            <div className="flex flex-col gap-8  w-full">
             <input type="text" placeholder="Name" required className="border md:py-4 py-3 px-2 rounded-md outline-none"/>
             <input type="email" placeholder="E-mail" required className="border md:py-4 py-3 px-2 rounded-md outline-none"/>
             <input type="tel" placeholder="Phone" required className="border md:py-4 py-3 px-2 rounded-md outline-none" />
