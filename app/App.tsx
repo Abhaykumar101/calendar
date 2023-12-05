@@ -47,7 +47,7 @@ export default function Calendar() {
 			<div className={`flex ${isMainDivHidden ? 'hidden' : ''}`}>
 			<div className={`flex flex-col h-full ${isDivhidden ? 'hidden' : ''} `}>
 			<h1 className="text-lg font-semibold px-4 py-8">Select a Date & Time</h1>
-				<div className="flex justify-between items-center">
+				<div className="flex ">
 		
 					<div className="flex gap-2 w-full justify-center items-center ">
 						<GrFormPrevious
