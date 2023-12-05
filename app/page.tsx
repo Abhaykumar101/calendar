@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         
 
-        <div className="md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 shadow-2xl md:shadow-[0px] rounded-lg ">
+        <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 shadow-2xl md:shadow-[0px] rounded-lg ">
         <App />
       </div>
 
