@@ -119,7 +119,7 @@ export default function Calendar() {
 				</div>
 			</div> 
 			
-			<div className={`flex flex-col justify-center w-full items-center gap-4 py-20 transition-all border  ${isDivhidden ? '' : 'hidden'} `}>
+			<div className={`flex flex-col justify-center w-full items-center gap-4 px-4 py-20 transition-all  ${isDivhidden ? '' : 'hidden'} `}>
 			<h1 className="text-lg font-semibold pb-4">Select a Date & Time</h1>
 				<h1 className="font-semibold text-center text-[#EC0B43]">
 					{selectDate.toDate().toDateString()}
