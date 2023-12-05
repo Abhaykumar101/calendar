@@ -124,9 +124,9 @@ export default function Calendar() {
 				<h1 className="font-semibold text-center text-[#EC0B43]">
 					{selectDate.toDate().toDateString()}
 				</h1>
-				<div className="overflow-y-scroll  gap-4 flex flex-col py-2 px-8 transition-all duration-700">
+				<div className="overflow-y-scroll  gap-4 flex flex-col py-2 md:px-8 transition-all duration-700">
 				{timeSlots.map((time, index) => (
-					 <p key={index} className={`border border-purple-300 hover:border-purple-500 text-center px-16 rounded-lg py-2 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
+					 <p key={index} className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-medium text-base`} onClick={handleTimeSlotClick}>{time}</p>
 					 ))}
                 </div>  
 			</div>
