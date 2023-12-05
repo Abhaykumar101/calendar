@@ -37,7 +37,7 @@ export default function Home() {
         </div>
         
 
-        <div className="md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 border-t-[1px] md:border-t-[0px] ">
+        <div className="md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 ">
         <App />
       </div>
 
