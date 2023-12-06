@@ -143,15 +143,24 @@ export default function Calendar() {
             isDivhidden ? "" : "hidden"
           } `}
         >
-          <div className="sticky top-0 py-8 md:py-0 bg-white w-full">
-            <h2 className="text-lg font-semibold text-center pb-4 ">
+
+		  <div className="flex w-full justify-end items-center">	
+			<a href="" className=" ">
+              <img
+                src="/image/left1.png"
+                alt=""
+                className="md:w-10 md:h-10 w-8 h-8 border rounded-full "
+              />
+            </a></div>
+          <div className="sticky flex justify-center items-center top-0 flex-col py-8 md:py-0 bg-white w-full">
+			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
-            </h2>
-            <h2 className="font-semibold text-center text-[#EC0B43]">
+             </h2>
+             <h2 className="font-semibold text-center text-[#EC0B43]">
               {selectDate.toDate().toDateString()}
-            </h2>
+             </h2>
           </div>
-          <div className="overflow-y-scroll md:pt-[430px] py-10 gap-4 flex flex-col justify-center items-center md:px-8 transition-all duration-700">
+          <div className="overflow-y-scroll md:pt-[430px] md:py-10 gap-4 flex flex-col justify-center items-center md:px-8 transition-all duration-700">
             {timeSlots12.map((time, index) => (
               <input
                 type="button"
@@ -173,7 +182,7 @@ export default function Calendar() {
               Enter Detail
             </h2>
 
-            <a href="" className="border rounded-full">
+            <a className="border cursor-pointer rounded-full" onClick={handleTimeSlotClick}>
               <img
                 src="/image/left1.png"
                 alt=""
