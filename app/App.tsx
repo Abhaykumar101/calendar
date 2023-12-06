@@ -46,7 +46,7 @@ export default function Calendar() {
 		<div className={`flex gap-4 mx-auto h-full `}>
 			<div className={`flex ${isMainDivHidden ? 'hidden' : ''}`}>
 			<div className={`flex flex-col h-full ${isDivhidden ? 'hidden' : ''} `}>
-			<h1 className="text-lg font-semibold px-4 py-8">Select a Date & Time</h1>
+			<h1 className="text-lg font-semibold px-4 py-8 ">Select a Date & Time</h1>
 				<div className="flex justify-between items-center">
 		
 					<div className="flex gap-2 w-full justify-center items-center ">
@@ -119,7 +119,7 @@ export default function Calendar() {
 				</div>
 			</div> 
 			
-			<div className={`flex flex-col justify-center w-full relative items-center gap-4 py-20 transition-all duration-700 ${isDivhidden ? '' : 'hidden'} `}>
+			<div className={`flex flex-col justify-center w-full relative items-center gap-4 py-20 transition-all ease-linear duration-700 ${isDivhidden ? '' : 'hidden'} `}>
 			<div className="sticky top-0 py-8 md:py-0 bg-white w-full">
 			<h2 className="text-lg font-semibold text-center pb-4 ">Select a Date & Time</h2>
 				<h2 className="font-semibold text-center text-[#EC0B43]">
@@ -138,7 +138,7 @@ export default function Calendar() {
             <div className="flex-col md:px-8 transition-all duration-700 pb-10">
 		    <div className="flex justify-between items-center py-8 ">
             <h2 className="font-semibold text-lg">Enter Detail</h2>
-			<a href="" className="border rounded-full"><img src="/image/left.png" alt="" className="md:w-10 md:h-10 w-8 h-8"/></a>
+			<a href="" className="border rounded-full"><img src="/image/left1.png" alt="" className="md:w-10 md:h-10 w-8 h-8"/></a>
 			</div>
             <div className="flex flex-col gap-8  w-full">
             <input type="text" placeholder="Name" required className="border md:py-4 py-3 px-2 rounded-md outline-none"/>
