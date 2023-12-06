@@ -120,7 +120,7 @@ export default function Calendar() {
                         today ? "bg-[#EC0B43] text-white" : "",
                         selectDate.toDate().toDateString() ===
                           date.toDate().toDateString()
-                          ? "bg-[#EC0B43] text-white"
+                          ? "bg-[#f1829e] text-white"
                           : "",
                         "h-10 w-10 rounded-full grid place-content-center hover:bg-black hover:text-white transition-all cursor-pointer select-none "
                       )}
@@ -144,15 +144,15 @@ export default function Calendar() {
           } `}
         >
 
-		  <div className="sticky top-0 py-2 bg-white flex w-full justify-end items-center">	
-			<a href="" className=" ">
+		  <div className="flex w-full justify-end items-center">	
+			<a onClick={()=>{handleDiv()}} className="cursor-pointer">
               <img
                 src="/image/left1.png"
                 alt=""
                 className="w-10 h-10 border rounded-full "
               />
             </a></div>
-          <div className="sticky top-12 flex justify-center items-center flex-col py-8 md:py-0 bg-white w-full">
+          <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
              </h2>
