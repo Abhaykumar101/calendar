@@ -144,12 +144,12 @@ export default function Calendar() {
           } `}
         >
 
-		  <div className="flex w-full justify-end items-center">	
+		  <div className="sticky top-0 flex w-full justify-end items-center">	
 			<a href="" className=" ">
               <img
                 src="/image/left1.png"
                 alt=""
-                className="md:w-10 md:h-10 w-8 h-8 border rounded-full "
+                className="w-10 h-10 border rounded-full "
               />
             </a></div>
           <div className="sticky flex justify-center items-center top-0 flex-col py-8 md:py-0 bg-white w-full">
@@ -186,7 +186,7 @@ export default function Calendar() {
               <img
                 src="/image/left1.png"
                 alt=""
-                className="md:w-10 md:h-10 w-8 h-8"
+                className="w-10 h-10"
               />
             </a>
           </div>
