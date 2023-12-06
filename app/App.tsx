@@ -144,7 +144,7 @@ export default function Calendar() {
           } `}
         >
 
-		  <div className="sticky top-0 flex w-full justify-end items-center">	
+		  <div className="sticky top-0 py-2 bg-white flex w-full justify-end items-center">	
 			<a href="" className=" ">
               <img
                 src="/image/left1.png"
@@ -152,7 +152,7 @@ export default function Calendar() {
                 className="w-10 h-10 border rounded-full "
               />
             </a></div>
-          <div className="sticky flex justify-center items-center top-0 flex-col py-8 md:py-0 bg-white w-full">
+          <div className="sticky top-12 flex justify-center items-center flex-col py-8 md:py-0 bg-white w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
              </h2>
