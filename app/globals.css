@@ -10,6 +10,12 @@
   box-shadow: rgba(149, 157, 165, 0.098) 0px 5px 15px;
 }
 
+@media screen and (min-width: 768px) {
+  body{
+    background-color: rgb(249 250 251)  !important;
+  }
+}
+
 body{
-  background-color: rgb(249 250 251)
+  background-color: white;
 }
