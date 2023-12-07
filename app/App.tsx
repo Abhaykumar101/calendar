@@ -120,7 +120,7 @@ export default function Calendar() {
                         today ? "bg-[#EC0B43] text-white" : "",
                         selectDate.toDate().toDateString() ===
                           date.toDate().toDateString()
-                          ? "bg-[#f1829e] text-white"
+                          ? ""
                           : "",
                         "h-10 w-10 rounded-full grid place-content-center hover:bg-black hover:text-white transition-all cursor-pointer select-none "
                       )}
@@ -139,7 +139,7 @@ export default function Calendar() {
         </div>
 
         <div
-          className={`flex flex-col justify-center w-full relative items-center gap-4 py-20 transition-all ease-linear duration-700 ${
+          className={`flex flex-col justify-center w-full relative items-center gap-4 py-10 transition-all ease-linear duration-700 ${
             isDivhidden ? "" : "hidden"
           } `}
         >
@@ -177,7 +177,7 @@ export default function Calendar() {
 
       {showAnotherDiv && (
         <div className="flex-col md:px-8 transition-all duration-700 pb-10">
-          <div className="flex justify-between items-center py-8 ">
+          <div className="flex justify-between items-center py-8">
             <h2 className="font-semibold text-lg">
               Enter Detail
             </h2>
