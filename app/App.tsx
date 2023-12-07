@@ -108,7 +108,7 @@ export default function Calendar({setShowUI}:any) {
 
           <div className=" grid grid-cols-7">
             {generateDate(today.month(), today.year()).map(
-              ({ date, currentMonth, today }, index) => {
+              ({ date, currentMonth, today , disabled }, index) => {
                 return (
                   <div
                     key={index}
@@ -122,12 +122,15 @@ export default function Calendar({setShowUI}:any) {
                           date.toDate().toDateString()
                           ? ""
                           : "",
+                          disabled ? "text-gray-300 cursor-not-allowed" : "cursor-pointer",
                         "h-10 w-10 rounded-full grid place-content-center hover:bg-black hover:text-white transition-all cursor-pointer select-none "
                       )}
                       onClick={() => {
-                        setSelectDate(date);
-                        handleDiv();
-                        setShowUI(false);
+                        if (!disabled) {
+                          setSelectDate(date);
+                          handleDiv();
+                          setShowUI(false);
+                        }
                       }}
                     >
                       {date.date()}
@@ -154,17 +157,24 @@ export default function Calendar({setShowUI}:any) {
              </h2>
           </div>
           <div className="overflow-y-scroll md:pt-[430px] md:py-10 gap-4 flex flex-col justify-center items-center md:px-8 transition-all duration-700">
-            {timeSlots12.map((time, index) => (
-              <input
-                type="button"
-                key={index}
-                value={time}
-                className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-semibold text-base cursor-pointer outline-none`}
-                onClick={handleTimeSlotClick}
-                onClickCapture={(e) => setSelectedTime(time)}
-              />
-            ))}
-          </div>
+  {timeSlots12
+    .filter(time => {
+      const currentTime = dayjs();
+      const selectedDateTime = dayjs(`${selectDate.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm');
+      return selectedDateTime.isAfter(currentTime);
+    })
+    .map((time, index) => (
+      <input
+        type="button"
+        key={index}
+        value={time}
+        className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-semibold text-base cursor-pointer outline-none`}
+        onClick={handleTimeSlotClick}
+        onClickCapture={(e) => setSelectedTime(time)}
+      />
+    ))}
+</div>
+
         </div>
       </div>
 
