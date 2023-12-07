@@ -148,7 +148,7 @@ export default function Calendar({setShowUI}:any) {
           } `}
         >
 
-        <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
+      <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
              </h2>

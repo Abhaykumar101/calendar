@@ -46,7 +46,7 @@ return (
             </div>
             <div className="md:hidden flex justify-center items-center">
             
-            <button onClick={handleScroll} className="px-4 py-2 border rounded-lg font-semibold text-[#EC0B43]">Schedule</button>
+            <button onClick={handleScroll} className=" w-4/5 py-2 rounded-lg font-semibold text-white bg-[#EC0B43]">Schedule</button>
       
           </div>
           </div>
