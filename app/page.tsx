@@ -1,17 +1,17 @@
 "use client";
 import Image from 'next/image'
 import React, {useState, useEffect} from "react";
-import App from './App';
+import Calender from './App';
 
 export default function Home() {
-  
+  const [showUI, setshowUI] = useState(true)
 return (
   <>
     <div className="flex md:h-screen justify-center items-center transition-all duration-700">
       <div className="flex md:flex-row flex-col gab-2 md:h-[650px] bg-white md:rounded-lg shadow-sm "  >
 
       
-        <div className="md:border-r-[1px] shadow-2xl md:shadow-[0px] ">
+        <div className={`${showUI?``:"hidden"} md:border-r-[1px] shadow-2xl md:shadow-[0px] `}>
           <div className="border-b-[1px] flex justify-center items-center py-10">
             <img src="/image/ooulet.png" alt="" className="w-1/2" />
           </div>
@@ -39,7 +39,7 @@ return (
         
 
         <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:pb-0 pb-12 shadow-2xl md:shadow-[0px] ">
-        <App />
+        <Calender setShowUI={setshowUI} />
       </div>
 
       </div> 

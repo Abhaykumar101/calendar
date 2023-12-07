@@ -4,7 +4,7 @@ import { generateDate, months } from "./Components/Calender";
 import cn from "./Components/cn";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
-export default function Calendar() {
+export default function Calendar({setShowUI}:any) {
 
 
 	let currentHour = 10;
@@ -127,6 +127,7 @@ export default function Calendar() {
                       onClick={() => {
                         setSelectDate(date);
                         handleDiv();
+                        setShowUI(false);
                       }}
                     >
                       {date.date()}
