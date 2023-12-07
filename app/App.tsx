@@ -67,7 +67,7 @@ export default function Calendar({setShowUI}:any) {
   const [today, setToday] = useState(currentDate);
   const [selectDate, setSelectDate] = useState(currentDate);
   return (
-    <div className={`flex gap-4 mx-auto h-full `}>
+    <div className={`flex gap-4 mx-auto h-full`}>
       <div className={`flex ${isMainDivHidden ? "hidden" : ""}`}>
         <div className={`flex flex-col h-full md:py-12 ${isDivhidden ? "hidden" : ""} `}>
           <h1 className="md:text-lg text-xl font-semibold px-4 py-8 text-center md:text-left text-[#EC0B43]">
@@ -227,7 +227,7 @@ export default function Calendar({setShowUI}:any) {
             </div>
           </div>
 
-          <button className="border md:py-4 py-3 w-2/5 rounded-lg font-semibold md:text-base text-sm text-[#EC0B43]">
+          <button className="md:py-4 py-3 w-2/5 rounded-lg font-semibold md:text-base text-sm text-white bg-[#EC0B43]">
             Schedule Call
           </button>
         </div>
