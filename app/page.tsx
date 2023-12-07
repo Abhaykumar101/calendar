@@ -38,7 +38,7 @@ return (
         </div>
         
 
-        <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700 bg-white md:rounded-lg md:shadow-[0px] shadow-2xl">
+        <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700  bg-white md:rounded-lg ">
         <Calender setShowUI={setshowUI} />
       </div>
 
