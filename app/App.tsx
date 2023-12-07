@@ -70,7 +70,7 @@ export default function Calendar({setShowUI}:any) {
     <div className={`flex gap-4 mx-auto h-full `}>
       <div className={`flex ${isMainDivHidden ? "hidden" : ""}`}>
         <div className={`flex flex-col h-full md:py-12 ${isDivhidden ? "hidden" : ""} `}>
-          <h1 className="text-lg font-semibold px-4 py-8 text-center md:text-left text-[#EC0B43]">
+          <h1 className="md:text-lg text-xl font-semibold px-4 py-8 text-center md:text-left text-[#EC0B43]">
             Select a Date & Time
           </h1>
           <div className="flex justify-between items-center">
