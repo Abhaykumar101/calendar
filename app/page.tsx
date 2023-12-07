@@ -8,7 +8,7 @@ export default function Home() {
 return (
   <>
     <div className="flex md:h-screen justify-center items-center transition-all duration-700">
-      <div className="flex md:flex-row flex-col gab-2 md:h-[650px] bg-white md:rounded-lg shadow-sm "  >
+      <div className="flex md:flex-row flex-col gab-2 md:h-[650px] bg-white md:rounded-lg md:shadow-sm "  >
 
       
         <div className={`${showUI?``:"hidden"} md:border-r-[1px] shadow-2xl md:shadow-[0px] `}>
