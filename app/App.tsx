@@ -69,7 +69,7 @@ export default function Calendar({setShowUI}:any) {
   return (
     <div className={`flex gap-4 mx-auto h-full `}>
       <div className={`flex ${isMainDivHidden ? "hidden" : ""}`}>
-        <div className={`flex flex-col h-full ${isDivhidden ? "hidden" : ""} `}>
+        <div className={`flex flex-col h-full py-12 ${isDivhidden ? "hidden" : ""} `}>
           <h1 className="text-lg font-semibold px-4 py-8 ">
             Select a Date & Time
           </h1>
