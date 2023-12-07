@@ -4,6 +4,16 @@ import React, {useState, useEffect} from "react";
 import Calender from './App';
 
 export default function Home() {
+
+  const handleScroll = () => {
+    // Scroll down by 500 pixels (adjust as needed)
+    window.scrollBy({
+      top: 500,
+      behavior: 'smooth',
+    });
+  };
+
+
   const [showUI, setshowUI] = useState(true)
 return (
   <>
@@ -34,14 +44,18 @@ return (
                 <p className="py-6">Pick a time that suits you, and we will call you back.</p>
               </div>
             </div>
+            <div className="md:hidden flex justify-center items-center">
+            
+            <button onClick={handleScroll} className="px-4 py-2 border rounded-lg font-semibold text-[#EC0B43]">Schedule</button>
+      
+          </div>
           </div>
         </div>
         
-
         <div className="flex justify-center items-center md:px-4 px-6 transition-all duration-700  bg-white md:rounded-lg ">
         <Calender setShowUI={setshowUI} />
       </div>
-
+ 
       </div> 
 
     </div>

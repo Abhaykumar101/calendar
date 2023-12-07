@@ -148,7 +148,7 @@ export default function Calendar({setShowUI}:any) {
           } `}
         >
 
-          <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
+        <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
              </h2>
@@ -156,24 +156,25 @@ export default function Calendar({setShowUI}:any) {
               {selectDate.toDate().toDateString()}
              </h2>
           </div>
-          <div className="overflow-y-scroll md:pt-[430px] md:py-10 gap-4 flex flex-col justify-center items-center md:px-8 transition-all duration-700">
-  {timeSlots12
-    .filter(time => {
-      const currentTime = dayjs();
-      const selectedDateTime = dayjs(`${selectDate.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm');
-      return selectedDateTime.isAfter(currentTime);
-    })
-    .map((time, index) => (
-      <input
-        type="button"
-        key={index}
-        value={time}
-        className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-semibold text-base cursor-pointer outline-none`}
-        onClick={handleTimeSlotClick}
-        onClickCapture={(e) => setSelectedTime(time)}
-      />
-    ))}
-</div>
+
+        <div className="overflow-y-scroll md:pt-[430px] md:py-10 gap-4 flex flex-col justify-center items-center md:px-8 transition-all duration-700">
+        {timeSlots12
+         .filter(time => {
+            const currentTime = dayjs();
+            const selectedDateTime = dayjs(`${selectDate.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm');
+            return selectedDateTime.isAfter(currentTime);
+          })
+          .map((time, index) => (
+          <input
+            type="button"
+            key={index}
+            value={time}
+            className={`border border-purple-300 hover:border-purple-500 text-center lg:px-16 px-24 rounded-lg lg:py-2 py-4 font-semibold text-base cursor-pointer outline-none`}
+            onClick={handleTimeSlotClick}
+            onClickCapture={(e) => setSelectedTime(time)}
+          />
+        ))}
+      </div>
 
         </div>
       </div>
@@ -226,7 +227,7 @@ export default function Calendar({setShowUI}:any) {
             </div>
           </div>
 
-          <button className="border md:py-4 py-3 w-2/5 rounded-lg font-semibold md:text-base text-sm">
+          <button className="border md:py-4 py-3 w-2/5 rounded-lg font-semibold md:text-base text-sm text-[#EC0B43]">
             Schedule Call
           </button>
         </div>
