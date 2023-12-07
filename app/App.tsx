@@ -145,7 +145,7 @@ export default function Calendar() {
         >
 
 		  <div className="flex w-full justify-end items-center">	
-			<a onClick={()=>{handleDiv()}} className="border rounded-full cursor-pointer -mb-6">
+			<a onClick={()=>{handleDiv()}} className="border rounded-full cursor-pointer md:-mb-6 -mt-2 -mr-[30px]">
               <img
                 src="/image/left1.png"
                 alt=""
