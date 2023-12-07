@@ -144,14 +144,6 @@ export default function Calendar() {
           } `}
         >
 
-		  <div className="flex w-full justify-end items-center">	
-			<a onClick={()=>{handleDiv()}} className="border rounded-full cursor-pointer md:-mb-6 -mt-2 -mr-[30px]">
-              <img
-                src="/image/left1.png"
-                alt=""
-                className="w-10 h-10 "
-              />
-            </a></div>
           <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
@@ -182,7 +174,7 @@ export default function Calendar() {
               Enter Detail
             </h2>
 
-            <a className="border cursor-pointer rounded-full" onClick={handleTimeSlotClick}>
+            <a href="" className="border cursor-pointer rounded-full">
               <img
                 src="/image/left1.png"
                 alt=""
