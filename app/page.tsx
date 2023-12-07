@@ -8,7 +8,7 @@ export default function Home() {
   const handleScroll = () => {
     // Scroll down by 500 pixels (adjust as needed)
     window.scrollBy({
-      top: 500,
+      top: 1000,
       behavior: 'smooth',
     });
   };
