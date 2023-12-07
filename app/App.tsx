@@ -145,14 +145,14 @@ export default function Calendar() {
         >
 
 		  <div className="flex w-full justify-end items-center">	
-			<a onClick={()=>{handleDiv()}} className="border rounded-full cursor-pointer -mb-6 -mt-[9px] md:-mt-0 -mr-[29.5px] md:-mr-0">
+			<a onClick={()=>{handleDiv()}} className="border rounded-full cursor-pointer -mb-6">
               <img
                 src="/image/left1.png"
                 alt=""
                 className="w-10 h-10 "
               />
             </a></div>
-          <div className="sticky top-0 flex justify-center items-center flex-col py-10 md:py-0 bg-white w-full">
+          <div className="sticky top-0 flex justify-center items-center flex-col py-8 md:py-0 bg-white md:bg-transparent w-full">
 			 <h2 className="text-lg font-semibold text-center pb-4 ">
               Select a Date & Time
              </h2>
@@ -176,7 +176,7 @@ export default function Calendar() {
       </div>
 
       {showAnotherDiv && (
-        <div className="flex-col md:px-8 transition-all duration-700 pb-10">
+        <div className="flex-col md:px-8 transition-all duration-700">
           <div className="flex justify-between items-center py-8">
             <h2 className="font-semibold text-lg">
               Enter Detail
