@@ -52,7 +52,7 @@ return (
           </div>
         </div>
         
-        <div className="flex justify-center items-center md:px-4 px-6 py-10 pb-28 md:py-0 transition-all duration-700  bg-white md:rounded-lg ">
+        <div className="flex justify-center items-center md:px-4 px-6 py-10 pb-32 md:pb-0 md:py-0 transition-all duration-700  bg-white md:rounded-lg ">
         <Calender setShowUI={setshowUI} />
       </div>
  
